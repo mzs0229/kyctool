@@ -1,0 +1,35 @@
+{
+    "code":0,
+    "docType":
+    [
+        {
+            "ID":"01",
+            "name":"ID Card"
+        },
+        {
+            "ID":"02",
+            "name":"ID Selfie"
+        },
+        {
+            "ID":"03",
+            "name":"Address Proof"
+        },
+        {
+            "ID":"04",
+            "name":"Company Doc"
+        },
+        {
+            "ID":"05",
+            "name":"Company Address Proof"
+        },
+        {
+            "ID":"06",
+            "name":"Credit Card Front"
+        },
+        {
+            "ID":"07",
+            "name":"Credit Card Back"
+        }
+    ],
+    "message":"OK"  
+}

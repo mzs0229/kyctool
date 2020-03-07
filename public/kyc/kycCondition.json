@@ -1,0 +1,200 @@
+{
+    "code":0,
+    "IdDoc":
+    [
+        {
+            "ID":"01",
+            "appCondition":"Name not matched",
+            "mailContent":"id mail1"
+        },
+        {
+            "ID":"02",
+            "appCondition":"Birthday not matched",
+            "mailContent":"id mail2"
+        },
+        {
+            "ID":"03",
+            "appCondition":"Pic not clear enough",
+            "mailContent":"id mail3"
+        },
+        {
+            "ID":"04",
+            "appCondition":"No backend",
+            "mailContent":"id mail4"
+        },
+        {
+            "ID":"05",
+            "appCondition":"Whole pic not include",
+            "mailContent":"id mail5"
+        }
+    ],
+    "SelfieDoc":
+    [
+        {
+            "ID":"01",
+            "appCondition":"Code not matched",
+            "mailContent":"id mail1"
+        },
+        {
+            "ID":"02",
+            "appCondition":"Birthday not matched",
+            "mailContent":"id mail2"
+        },
+        {
+            "ID":"03",
+            "appCondition":"Pic not clear enough",
+            "mailContent":"id mail3"
+        },
+        {
+            "ID":"04",
+            "appCondition":"No backend",
+            "mailContent":"id mail4"
+        },
+        {
+            "ID":"05",
+            "appCondition":"Whole pic not include",
+            "mailContent":"id mail5"
+        }
+    ],
+    "AddressDoc":
+    [
+        {
+            "ID":"01",
+            "appCondition":"Name not matched",
+            "mailContent":"id mail1"
+        },
+        {
+            "ID":"02",
+            "appCondition":"Birthday not matched",
+            "mailContent":"id mail2"
+        },
+        {
+            "ID":"03",
+            "appCondition":"Pic not clear enough",
+            "mailContent":"id mail3"
+        },
+        {
+            "ID":"04",
+            "appCondition":"No backend",
+            "mailContent":"id mail4"
+        },
+        {
+            "ID":"05",
+            "appCondition":"Whole pic not include",
+            "mailContent":"id mail5"
+        }
+    ],
+    "CompanyDoc":
+    [
+        {
+            "ID":"01",
+            "appCondition":"Name not matched",
+            "mailContent":"id mail1"
+        },
+        {
+            "ID":"02",
+            "appCondition":"Birthday not matched",
+            "mailContent":"id mail2"
+        },
+        {
+            "ID":"03",
+            "appCondition":"Pic not clear enough",
+            "mailContent":"id mail3"
+        },
+        {
+            "ID":"04",
+            "appCondition":"No backend",
+            "mailContent":"id mail4"
+        },
+        {
+            "ID":"05",
+            "appCondition":"Whole pic not include",
+            "mailContent":"id mail5"
+        }
+    ],
+    "CompanyAddressDoc":
+    [
+        {
+            "ID":"01",
+            "appCondition":"Name not matched",
+            "mailContent":"id mail1"
+        },
+        {
+            "ID":"02",
+            "appCondition":"Birthday not matched",
+            "mailContent":"id mail2"
+        },
+        {
+            "ID":"03",
+            "appCondition":"Pic not clear enough",
+            "mailContent":"id mail3"
+        },
+        {
+            "ID":"04",
+            "appCondition":"No backend",
+            "mailContent":"id mail4"
+        },
+        {
+            "ID":"05",
+            "appCondition":"Whole pic not include",
+            "mailContent":"id mail5"
+        }
+    ],
+    "CreditCardFront":
+    [
+        {
+            "ID":"01",
+            "appCondition":"Name not matched",
+            "mailContent":"id mail1"
+        },
+        {
+            "ID":"02",
+            "appCondition":"Birthday not matched",
+            "mailContent":"id mail2"
+        },
+        {
+            "ID":"03",
+            "appCondition":"Pic not clear enough",
+            "mailContent":"id mail3"
+        },
+        {
+            "ID":"04",
+            "appCondition":"No backend",
+            "mailContent":"id mail4"
+        },
+        {
+            "ID":"05",
+            "appCondition":"Whole pic not include",
+            "mailContent":"id mail5"
+        }
+    ],
+    "CreditCardBack":
+    [
+        {
+            "ID":"01",
+            "appCondition":"Name not matched",
+            "mailContent":"id mail1"
+        },
+        {
+            "ID":"02",
+            "appCondition":"Birthday not matched",
+            "mailContent":"id mail2"
+        },
+        {
+            "ID":"03",
+            "appCondition":"Pic not clear enough",
+            "mailContent":"id mail3"
+        },
+        {
+            "ID":"04",
+            "appCondition":"No backend",
+            "mailContent":"id mail4"
+        },
+        {
+            "ID":"05",
+            "appCondition":"Whole pic not include",
+            "mailContent":"id mail5"
+        }
+    ],
+    "message":"OK" 
+}
