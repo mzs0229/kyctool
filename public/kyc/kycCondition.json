@@ -4,12 +4,12 @@
     [
         {
             "ID":"01",
-            "appCondition":"Name not matched",
+            "appCondition":"名義不一致",
             "mailContent":"id mail1"
         },
         {
             "ID":"02",
-            "appCondition":"Birthday not matched",
+            "appCondition":"生年月日不一致",
             "mailContent":"id mail2"
         },
         {

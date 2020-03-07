@@ -3,7 +3,10 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/kyctool">KycTool</router-link> 
+      <router-link to="/kyctool">KycTool</router-link> |
+      <!-- <router-link to="/par">Par</router-link> |
+      <router-link to="/c1">Child1</router-link> |
+      <router-link to="/c2">Child2</router-link> | -->
     </div>
     <router-view/>
   </div>

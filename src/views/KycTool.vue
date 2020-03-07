@@ -5,12 +5,13 @@
         <DocType></DocType>
       </div>
       <div class="conditionArea">
+        <!-- <p class="title">Approve Condition</p> -->
         <KycCondition></KycCondition>
       </div>
     </div>
 
     <div class="right">
-      mailArea
+      <MailGenerator></MailGenerator>
     </div>
   </div>
 </template>
@@ -19,41 +20,39 @@
 // @ is an alias to /src
 import DocType from "../components/DocType.vue";
 import KycCondition from "../components/KycCondition.vue";
+import MailGenerator from "../components/MailGenerator.vue";
+
+
 
 export default {
   components: {
     DocType,
-    KycCondition
+    KycCondition,
+    MailGenerator
   }
 };
 </script>
 
 <style>
 .left{
-  
   width: 900px;
-  background-color: chocolate;
 }
-.docTypeArea {
+.docTypeArea{
   float:left;
-  width: 900px;
-  height: 400px;
-  background-color: aqua;
-}
-.docTypeArea li{
- 
-  width: 250px;
- 
+ width: 100%;
+  height: 300px;
+  background-color: darkgrey;
 }
 .conditionArea{
-  float: left;
-  background-color: blueviolet;
-  
+ width: 100%;
+ height: 800px;
+ background-color: darkorange;
 }
+
 .right{
-   float: left;
+  float: right;
   width: 800px;
   height: 500px;
-  background-color: darkgreen;
+  background-color: lawngreen;
 }
 </style>

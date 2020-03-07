@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import KycTool from '../views/KycTool.vue'
 import DocType from '../components/DocType.vue'
 
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -27,9 +28,8 @@ const routes = [
   },
   {
     path: '/kyctool',
-    name: 'KycTool',
     component: KycTool
-  },
+  }
 
 ]
 
