@@ -5,12 +5,12 @@
         {
             "ID":"01",
             "appCondition":"名義不一致",
-            "mailContent":"id mail1"
+            "mailContent":"書類名義と登録アカウント名義不一致"
         },
         {
             "ID":"02",
             "appCondition":"生年月日不一致",
-            "mailContent":"id mail2"
+            "mailContent":"書類生年月日と登録生年月日不一致"
         },
         {
             "ID":"03",

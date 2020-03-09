@@ -16,19 +16,32 @@
           <button @click="credit">Credit</button>
         </div>
         <div class="btnp2">
-          <button @click="selectAll">select all</button>
-          <button @click="clearAll">clear all</button>
-          <button @click="clickButton(checkedDocs)">confirm</button>
+          <button @click="selectAll">Select all</button>
+          <button @click="clearAll">Clear all</button>
+          <button @click="sendcheckedDocs(checkedDocs)">Confirm</button>
         </div>
+        <div>
+          explaination
+          <div>Docs{{checkedDocs}}
+            staffname{{staffNames}}</div>
+            
+        </div>
+       
       </div>
-      <!-- {{checkedDocs}} -->
+      <div class="staffName">Staff Name
+        <ul v-for="(item, index) in staffNameList" :key="index">
+          <li>
+            <input type="checkbox" v-model="staffNames" :value="item.name" :id="'staff'+index"/><label :for="'staff'+index">{{item.ID}}:{{item.name}}</label>
+          </li>
+        </ul>
+      </div>
+     
     </div>
   </div>
 </template>
 
 <script>
 import axios from "axios";
-import KycCondition from "../components/KycCondition";
 import Bus from "./bus.js";
 
 export default {
@@ -36,11 +49,13 @@ export default {
   data() {
     return {
       kycList: [],
-      checkedDocs: [0,1,2]
+      staffNameList:[],
+      checkedDocs: [0,1,2],
+      staffNames:[]
     };
   },
   components: {
-    KycCondition
+    
   },
   props: {},
 
@@ -48,6 +63,10 @@ export default {
     axios.get("./kyc/kycDocJP.json").then(res => {
       // console.log(res.data.docType.name);
       this.kycList = res.data.docType;
+    });
+     axios.get("./kyc/staffName.json").then(res => {
+      console.log(res.data.staffName.name);
+      this.staffNameList = res.data.staffName;
     });
   },
   methods: {
@@ -72,8 +91,8 @@ export default {
         });
       }
     },
-    clickButton(val) {
-      Bus.$emit("emitevent", val);
+    sendcheckedDocs(val) {
+      Bus.$emit("emitConEvent", val);
     }
   }
   // watch:{
@@ -97,8 +116,8 @@ button {
 }
 .title {
   float: left;
-  margin-left: 50px;
-  width: 100px;
+  margin-left: 10px;
+  width: 50px;
 }
 .docs {
   float: left;
@@ -120,5 +139,10 @@ button:hover{
 				color: white;
         background: deepskyblue;
 			}
+
+.staffName{
+  float: left;
+  width: 300px;
+}
 
 </style>

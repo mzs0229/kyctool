@@ -34,25 +34,66 @@ export default {
 </script>
 
 <style>
+
+
 .left{
-  width: 900px;
+  position:fixed;
+  left:10px;
+  top:100px;
+  width: 1000px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.right{
+  position: fixed;
+  left:1020px;
+  top:100px;
+  width: 850px;
+  height: 100%;
+  overflow-y: scroll;
+  background-color:lightblue;
+
+}
+.docTypeArea{
+  width:100%;
+  height: 300px;
+  background-color: aqua;
+}
+.conditionArea{
+  width: 100%;
+  height: 100%;
+  background-color: coral;
+}
+/* .App{
+  overflow-y: scroll;
+}
+.left{
+  position: fixed;
+  left:10px;
+  top:100px;
+  width: 950px;
+  height: 100%;
+ 
 }
 .docTypeArea{
   float:left;
- width: 100%;
+  width: 100%;
   height: 300px;
   background-color: darkgrey;
 }
 .conditionArea{
  width: 100%;
- height: 800px;
+ height: 100%;
+
  background-color: darkorange;
 }
 
 .right{
-  float: right;
-  width: 800px;
-  height: 500px;
+  position: fixed;
+  left: 970px;
+  top:100px;
+  width: 900px;
+  height: 100%;
   background-color: lawngreen;
-}
+} */
 </style>

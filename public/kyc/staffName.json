@@ -1,0 +1,19 @@
+{
+    "code":0,
+    "staffName":
+    [
+        {
+            "ID":"01",
+            "name":"Mu"
+        },
+        {
+            "ID":"02",
+            "name":"Jian"
+        },
+        {
+            "ID":"03",
+            "name":"Motobashi"
+        }
+    ],
+    "message":"OK"  
+}

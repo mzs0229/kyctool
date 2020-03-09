@@ -3,6 +3,7 @@
     <!-- {{cValue}}++++ -->
     <div>
       <div v-if="cValue == ''">No Docs selected!</div>
+      <div><button @click="creatMail(conVal)">Create Mail</button></div>
     </div>
     <div>
       <div class="condition" v-if="cValue.includes(0) > 0">
@@ -14,7 +15,7 @@
             <input
               type="checkbox"
               v-model="checkedIDAdd"
-              :value="index"
+              :value="item.mailContent"
               :id="'id' + index"
             /><label :for="'id' + index">{{ item.appCondition }}</label>
           </li>
@@ -137,7 +138,6 @@
 
 <script>
 import axios from "axios";
-import DocType from "./DocType.vue";
 import Bus from "./bus.js";
 
 export default {
@@ -158,11 +158,12 @@ export default {
       checkedComAdd: [],
       checkedComAddAdd: [],
       checkedCreditFrontAdd: [],
-      checkedCreditBackAdd: []
+      checkedCreditBackAdd: [],
+      conVal:"muzs"
     };
   },
   components: {
-    DocType
+    
   },
   // monted(){
   //   Bus.$on('listenToA',this.getAData);
@@ -178,25 +179,27 @@ export default {
       this.creditFrontConditionList = res.data.CreditCardFront;
       this.creditBackConditionList = res.data.CreditCardBack;
     });
-
-    Bus.$on("emitevent", val => {
+    Bus.$on("emitConEvent", val => {
       this.cValue = val;
     });
   },
   methods: {
-    getAData(val) {
-      this.cValue = val;
+    // getData(val) {
+    //   this.cValue = val;
+    // },
+    createMail (val) {
+      Bus.$emit("emitMailEvent", val);
     }
   }
 };
 </script>
 
 <style>
-/* .kycCondition .title{
-  float: left;
-}*/
+
 .condition {
   float: left;
-  width: 300px;
+  width: 320px;
+  height: 100%;
+  margin-left: 5px;
 }
 </style>

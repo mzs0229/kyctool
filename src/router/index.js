@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Mail from '../views/Mail.vue'
 import KycTool from '../views/KycTool.vue'
 import DocType from '../components/DocType.vue'
 
@@ -29,6 +30,10 @@ const routes = [
   {
     path: '/kyctool',
     component: KycTool
+  },
+  {
+    path: '/mail',
+    component: Mail
   }
 
 ]
